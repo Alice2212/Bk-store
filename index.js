@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Connect to Mongoose and set connection variable
-mongoose.connect("mongodb://localhost:27017/restApiDB", {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect("mongodb://localhost:27017/restApiDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 //URL TO CONNECT TO DATABASE FROM MONGO DB ATLAS
-// mongoose.connect("mongodb+srv://oluwatosin:Alice400@bookstore-xxcix.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://oluwatosin:Alice400@bookstore-xxcix.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 
 // Define server port
